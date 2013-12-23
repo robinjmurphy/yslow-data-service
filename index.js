@@ -63,11 +63,13 @@ module.exports = {
       _.merge(options, {limit: 1, sort: -1});
 
       this.all(options, function (err, results) {
+        var result = null;
+
         if (results && results.length === 1) {
-          results = results[0];
+          result = results[0];
         }
 
-        cb(err, results);
+        cb(err, result);
       });
     },
 
