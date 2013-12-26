@@ -104,7 +104,7 @@ yslow.urls.all(function (err, urls) {
 
 ### Configuration
 
-By default package is configured to use a MongoDB database at `mongodb://127.0.0.1:27017/yslow`. To change this, set the environment variable `YSLOW_DATA_DB` e.g.
+By default the package is configured to use a MongoDB database at `mongodb://127.0.0.1:27017/yslow`. To change this, set the environment variable `YSLOW_DATA_DB` e.g.
 
 ```bash
 EXPORT YSLOW_DATA_DB="mongodb://127.0.0.1:27017/some_db"
