@@ -1,5 +1,7 @@
 # yslow-data-service
 
+[![Code Climate](https://codeclimate.com/github/robinjmurphy/yslow-data-service.png)](https://codeclimate.com/github/robinjmurphy/yslow-data-service)
+
 A Node package for persisting web performance data from [YSlow](http://yslow.org) to a [MongoDB](http://www.mongodb.org/) database.
 
 For a YSlow data REST interface see [yslow-data-rest-api](https://github.com/robinjmurphy/yslow-data-rest-api).
