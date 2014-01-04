@@ -8,6 +8,7 @@ module.exports = {
     /**
      * Create a new result
      */
+
     create: function (data, cb) {
       var result = new Result(data);
 
@@ -21,6 +22,7 @@ module.exports = {
     /**
      * Return all of the results
      */
+
     all: function (options, cb) {
       var query = {};
 
@@ -54,6 +56,7 @@ module.exports = {
     /**
      * Return the latest result
      */
+
     latest: function (options, cb) {
       if (_.isFunction(options)) {
         cb = options;
@@ -76,6 +79,7 @@ module.exports = {
     /**
      * Find a result by its ID
      */
+
     findById: function (id, cb) {
       db.results.findOne({ _id: id }, function(err, doc) {
         var result = null;
@@ -93,6 +97,7 @@ module.exports = {
     /**
      * Remove a result by its ID
      */
+
     removeById: function (id, cb) {
       db.results.remove({ _id: id }, cb);
     },
@@ -100,6 +105,7 @@ module.exports = {
     /**
      * Remove all results stored
      */
+
     removeAll: function (cb) {
       db.results.remove(cb);
     }
@@ -109,6 +115,7 @@ module.exports = {
   /**
    * Return the unique set of URLs
    */
+
   urls: {
     all: function (cb) {
       db.results.find({}, function (err, docs) {
