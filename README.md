@@ -1,5 +1,6 @@
 # yslow-data-service
 
+[![Build Status](https://travis-ci.org/robinjmurphy/yslow-data-service.png?branch=master)](https://travis-ci.org/robinjmurphy/yslow-data-service)
 [![Code Climate](https://codeclimate.com/github/robinjmurphy/yslow-data-service.png)](https://codeclimate.com/github/robinjmurphy/yslow-data-service)
 
 A Node package for persisting web performance data from [YSlow](http://yslow.org) to a [MongoDB](http://www.mongodb.org/) database.
