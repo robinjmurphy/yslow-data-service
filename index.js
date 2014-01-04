@@ -112,11 +112,12 @@ module.exports = {
 
   },
 
-  /**
-   * Return the unique set of URLs
-   */
-
   urls: {
+
+    /**
+     * Return the unique set of URLs
+     */
+
     all: function (cb) {
       db.results.find({}, function (err, docs) {
         var urls;
@@ -130,5 +131,7 @@ module.exports = {
         cb(err, urls);
       });
     }
+
   }
+
 }
